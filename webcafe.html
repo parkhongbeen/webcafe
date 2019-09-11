@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko-KR">
-    
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./webcafe.css">
 </head>
 ​
+
 <body>
     <!-- 컨텐츠의 구조 분석, css에서 꾸미기 편하게 시멘틱하게 만들기 -->
     <header class="header">
@@ -16,10 +17,10 @@
         <ul class="member">
             <li>
                 <a href="#">홈</a></li>
-                <li><a href="#">로그인</a></li>
-                <li><a href="#">회원가입</a></li>
-                <li><a href="#">사이트맵</a></li>
-                <li><a href="#">english</a></li>
+            <li><a href="#">로그인</a></li>
+            <li><a href="#">회원가입</a></li>
+            <li><a href="#">사이트맵</a></li>
+            <li><a href="#">english</a></li>
         </ul>
         <nav class="navigation">
             <h2 class="a11y-hidden">메인메뉴</h2>
@@ -127,21 +128,95 @@
         </nav>
     </header>
     <div class="visual">
-            <div class="visual-text">
-                        Web Standards &amp; Accessibility
-                    </div>
+        <div class="visual-text">
+            Web Standards &amp; Accessibility
+        </div>
     </div>
-    
-          </div>    
-          <main class="main-content">
+
+    </div>
+    <main class="main-content">
         <!-- div.class.group.group${group$}*3 -->
-        <div class="group group1">그룹1</div>
-        <div class="group group2">그룹2</div>
+
+        <div class="group group1">
+            <section class="login">
+                <h2 class="login-heading">로그인</h2>
+                <form class="login-form" action="https://formspree.io/pack122@naver.com" method="POST" target="_blank">
+                    <fieldset>
+                        <legend>회원 로그인 폼</legend>
+                        <div class="user-email">
+                            <label class="user-email" for="user-email">아이디</label>
+                            <input class="input-usermail" type="email" id="user-email" name="id" required
+                                placeholder="8자리 이하">
+                        </div>
+                        <div class="user-pw">
+                            <label for="user-password">비밀번호</label>
+                            <input type="password" id="user-password" name="password" required>
+                        </div>
+                        <button class="btn-login" type="submit">로그인</button>
+                    </fieldset>
+                </form>
+                <ul class="sign">
+                    <li class="icon-angle-right"><a href="#">회원가입</a></li>
+                    <li class="icon-angle-right"><a href="#">아이디/비밀번호찾기</a></li>
+                </ul>
+            </section>
+            <section class="a11y hidden">
+                <h2 class="readable-hidden"></h2>
+                <ul class="validation-list">
+                    <li>
+                        <a href="https://validator.w3.org/" target="_blank" title="마크업 유효성 검사 사이트로 이동(새창)">
+                            <img src="./css/images/validation_icon.png" alt="유효성검사아이콘"> W3C Markup Validation
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://jigsaw.w3.org/css-validator/" target="_blank" title="CSS 유효성 검사 사이트로 이동(새창)">
+                            <img src="./css/images/validation_icon.png" alt="유효성검사아이콘"> CSS Validation Service
+                        </a>
+                    </li>
+                </ul>
+            </section>
+            <section class="term-list-wrap">
+                <h2 class="term-heading">웹 관련 용어</h2>
+                <dl class="term-list">
+                    <dt class="term-list-subject"><a href="#"></a>웹 표준이란?</dt>
+                    <dd class="term-list-thumnail"><img src="./images/web_standards.gif" alt="w3c"></dd>
+                    <dd class="term-list-brief">w3c단체에서 규정한 웹 기술 사양에 대한 규칙을 말하며 표준 규격은..</dd>
+                </dl>
+            </section>
+        </div>
+
+        <div class="group group2">
+            <section>
+                <h2 class="a11y-hidden">검색창</h2>
+                <form action="https://formspree.io/pack122@naver.com" class="search-form">
+                    <fieldset>
+                        <legend>검색 form</legend>
+                        <div class="container">
+                            <label for="search" class="icon-search">자료검색</label>
+                            <input type="search" id="search" required placeholder="검색어를 입력하세요">
+                            <button type="submit" class="btn-search">검색</button>
+                        </div>
+                    </fieldset>
+                </form>
+            </section>
+            <section>
+                <button class="information">
+                    <ul>
+                        <li class="icon-dot-circled">HTML의 모든 것을 알려주마 샘플 활용법</li>
+                        <li class="icon-dot-circled">w3c사이트 리뉴얼 및 공지사항</li>
+                        <li class="icon-dot-circled">kwcag 2.1소식</li>
+                        <li class="icon-dot-circled">서버 점검으로 인한 사이트 이용안내입니다.</li>
+                        <li class="icon-dot-circled">여러분들이 생각하는 웹 접근성에 대해 이야기...</li>
+                    </ul>
+                </button>
+            </section>
+        </div>
         <div class="group group3">그룹3</div>
     </main>
     <article class="slogan">슬로건</article>
     <div class="footer-bg">
-            <footer class="footer">푸터</footer>
-        </div>
-    </body>
+        <footer class="footer">푸터</footer>
+    </div>
+</body>
+
 </html>
