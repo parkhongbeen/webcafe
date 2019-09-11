@@ -1,0 +1,21 @@
+
+
+<section class="login"><sect>요소는 내용이 각기 독립적일때 사용-->
+    <h2 class ="login-heading">로그인</h2>
+    <form class="login-form" action="https://formspree.io/pack122@naver.com" method="POST" target:"_blank"><!-- <form>요소는 입력된 데이터를 한번에 서버로 전송함 -->
+        <fieldset class="login"><!-- <form>요소안에서 그룹화하는데 사용 -->
+            <legend>로그인 창</legend><!-- <fieldset>태그를 사용하때 제목을 지정 -->
+            <label for="user-email">아이디</label><!--<label>은 <form>요소안에서 레이블을 붙이는 태그 -->
+            <input type="text" id="user-email" value="이메일주소"><br>
+            <label for="user-password">비밀번호</label>
+            <input type="text" id="user-password" value="8자리 이상">
+            <!-- type을 password로 해야 비밀번호적는란에 보이지않음 , 
+                id를 연결하여 "비밀번호"를 클릭해도 커서가 박스안에 들어갈 수 있게 함 -->
+            <button type="submit">로그인</button><!--<form>의 전송기능을 담당-->
+        </fieldset>    
+    </form>
+    <ul>
+            <li><a href="#">회원가입</a></li>
+            <li><a href="#"">아이디/비밀번호찾기</a></li>
+    </ul>
+</section>
