@@ -1,7 +1,7 @@
 @charset "utf-8";
 @import url('https://necolas.github.io/normalize.css/latest/normalize.css');
 @import url('https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css');
-@import url('./fontello.css');
+@import url('./css/fontello.css');
 
 
 /* 초기화 */
@@ -405,7 +405,6 @@ input[type="search"]{
 }
 /* 공지사항 및 자료실 */
 .board{
-  background: yellow;
   position: relative;
 }
 .board ul, .board .more{
@@ -418,7 +417,7 @@ input[type="search"]{
   margin: 0;
   font-weight: 400;
   font-size: 1em;
-  background: skyblue;
+  
   position: absolute;
   top: 0;
 }
@@ -442,19 +441,19 @@ input[type="search"]{
   background: #fff;
 }
 .board ul{
-  background: pink;
+
   margin: 20px 0;
   padding: 45px 0 0 0;
   list-style: none;
 }
 .board li{
-  background: lime;
+  
   margin: 8px 0;
   display: flex;
   /* justify-content: space-between; */
 }
 .board li a{
-  background: silver;
+  
   width:270px;
   /* width: 100%; */
   white-space: nowrap;
@@ -462,18 +461,18 @@ input[type="search"]{
   text-overflow: ellipsis;
 }
 .board time{
-  background: orange;
+  
   /* width: 130px; */
   margin-left: auto;
 }
 .board .more{
-  background: skyblue;
+
   position: absolute;
   top: 0;
   right: 0;
 }
 .more::before{
-  color: hsla(110,70%,20%,1);
+  color: green;
 }
 .slogan{
   background-color: orange;
@@ -486,5 +485,62 @@ input[type="search"]{
 .footer{
   background-color: yellow;
 }
+.news{
+  position: relative;
+}
 
-/*  */
+.news-headding{
+font-size:1.5rem;
+color:#ed8625;
+font-weight:700px;
+}
+.news::before {
+  content: "";
+  position: absolute;
+  top: 35px;
+  left: 0px;
+  width: 80%;
+  height: 1px;
+  background: linear-gradient(to right, rgb(170, 170, 170), rgb(238, 238, 238)) rgb(170, 170, 170);
+}
+.news-contents{
+  margin-top:45px;
+  padding-left: 130px;
+  position: relative;
+  height: 110px;
+}
+.news-contents-heading{
+  font-weight: 800;
+  margin:0px;
+  font-size:1.4rem;
+}
+.news-contents-text{
+ font-size: 100%;
+ margin-top:20px;
+}
+.news-contents-date{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+.news-contents-thumbnail{
+  position: absolute;
+  left:0;
+  top:0;
+  margin:0;
+  text-align: center;
+}
+.news-contents-thumbnail figcaption{
+  margin-top:15px;
+}
+.news-more{
+position: absolute;
+top:0;
+right:0;
+}
+.news-more::before {
+  color:green;
+}
