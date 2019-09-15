@@ -144,6 +144,8 @@ body{
 .sub-menu4, .sub-menu5, .sub-menu6{
   right: 0;
 }
+
+
 /* 비주얼 */
 @keyframes textAni{
   0%{
@@ -165,9 +167,11 @@ body{
     left: 400px; */
   }
 }
+
+
 @keyframes bgAni{
-  0%{ opacity: 1; }
-  100%{ opacity: 0; }
+  opacity: 1; 
+  opacity: 0;
 }
 .visual{
   background-color: lime;
@@ -179,12 +183,12 @@ body{
   width: 100%;
   height: 100%;
   position: absolute;
-  /* animation-name: bgAni;
+  animation-name: bgAni;
   animation-duration: 2000ms;
   animation-iteration-count: infinite;
   animation-direction: alternate;
   animation-timing-function: ease-in-out;
-  animation-play-state: paused; */
+  animation-play-state: paused;
   animation: bgAni 2000ms infinite alternate ease-in-out;
 }
 .visual::before{
@@ -466,7 +470,6 @@ input[type="search"]{
   margin-left: auto;
 }
 .board .more{
-
   position: absolute;
   top: 0;
   right: 0;
@@ -488,13 +491,7 @@ input[type="search"]{
 .news{
   position: relative;
 }
-
-.news-headding{
-font-size:1.5rem;
-color:#ed8625;
-font-weight:700px;
-}
-.news::before {
+.news::before{
   content: "";
   position: absolute;
   top: 35px;
@@ -503,44 +500,41 @@ font-weight:700px;
   height: 1px;
   background: linear-gradient(to right, rgb(170, 170, 170), rgb(238, 238, 238)) rgb(170, 170, 170);
 }
+.news-heading{
+  color:#ed8625;
+  font-size: 1.5rem;
+}
 .news-contents{
-  margin-top:45px;
-  padding-left: 130px;
-  position: relative;
-  height: 110px;
+  margin-left:140px;
+  margin-top:50px;
 }
 .news-contents-heading{
-  font-weight: 800;
-  margin:0px;
-  font-size:1.4rem;
-}
-.news-contents-text{
- font-size: 100%;
- margin-top:20px;
+font-size: 1.4rem;
+margin:0;
 }
 .news-contents-date{
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
+
 }
-.news-contents-thumbnail{
-  position: absolute;
-  left:0;
-  top:0;
-  margin:0;
-  text-align: center;
+.news-contents-text{
+
 }
-.news-contents-thumbnail figcaption{
+.news-contents-thumbnail {
+  position:absolute;
+  left: -40px;
+  top: 50px;
+}
+.news-contents-thumbnail img{
+  box-shadow: 0 15px 15px 0 #666;
+}
+  .news-contents-thumbnail figcaption{
+  margin-left:20px;
   margin-top:15px;
 }
 .news-more{
-position: absolute;
-top:0;
-right:0;
+  position: absolute;
+  right:0;
+  top:0;
 }
-.news-more::before {
-  color:green;
+.news-more::before{
+  color: green;
 }
