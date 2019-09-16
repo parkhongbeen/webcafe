@@ -1,0 +1,70 @@
+@import url('../css/fontello.css');
+
+
+.board{
+    position: relative;
+    
+}
+.board ul, .board .more {
+    display:none;
+}
+.tab{
+    display:block;
+    color: #666;
+    border:1px solid #aaaaaa;
+    border-radius: 5px 5px 0 0;
+    background: #ccc linear-gradient(#ccc, #eee);
+    padding:5px 10px;
+}
+.tab-act ul,
+.tab-act .more{
+    display:block !important;
+}
+.notice-heading, .pds-heading{
+    margin:0;
+    font-weight:400;
+    font-size:1em;
+    position: absolute;
+    top:0;
+}
+.notice-heading{
+    left:0;
+}
+.pds-heading{
+    left:85px;
+}
+.tab-act .tab{
+    color: #ed8625;
+    border-color: #ed8625 #ed8625 #ffffff #ed8625;
+    background: #fff;
+}
+.board ul{
+    margin:20px 0;
+    padding:45px 0 0 0;
+    list-style: none;
+}
+.board li{
+    margin:8px 0;
+    display:flex;
+}
+.board time{
+    margin-left:auto;
+}
+.board .more{
+    position: absolute;
+    top:0;
+    right:0;
+}
+.more::before{
+    color:green;
+}
+.board li a{
+    width:100%;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}

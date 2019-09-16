@@ -9,10 +9,10 @@ overflow: hidden;
 }
 .brand2{
 background: yellow url(./images/zen_garden.png) no-repeat;
-height:195px;
-width:290px;
-text-indent:290px;
-white-space:nowrap;
+height: 195px;
+width: 290px;
+text-indent: 290px;
+white-space: nowrap;
 }
 .brand3{
 background: lime;
