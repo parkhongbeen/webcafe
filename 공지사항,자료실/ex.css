@@ -38,6 +38,9 @@
     border-color: #ed8625 #ed8625 #ffffff #ed8625;
     background: #fff;
 }
+.icon-dot-circled::before{
+    display:none;
+}
 .board ul{
     margin:20px 0;
     padding:45px 0 0 0;
